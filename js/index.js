@@ -41,7 +41,7 @@ let st=setInterval(lunbo,1000);
     clearInterval(st);
 }
     bannerContainer.onmouseout=function () {
-        st=setInterval(lunbo,2000);
+        st=setInterval(lunbo,1000);
     }
     nest.onclick=function () {
         lunbo("r");
