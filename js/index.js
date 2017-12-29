@@ -16,7 +16,7 @@ pag.forEach(function (ele,index) {
     }
 });
 let n=0;
-function lunbo(dir) {
+function lunbo(dir="r") {
     if(dir==="r"){
         n++;
     }
