@@ -71,6 +71,10 @@ let st=setInterval(lunbo,1000);
        console.log(t)
     }
 }
+
+
+
+
 {
     let flag=true;
     let topbar=document.querySelector(".bar");
@@ -85,7 +89,7 @@ let st=setInterval(lunbo,1000);
         }else {
             topbar.style.display="none";
         }
-        if(st>620){
+        if(st>2600){
             leftbar.style.display="block";
         }else{
             leftbar.style.display="none";
@@ -124,3 +128,75 @@ let st=setInterval(lunbo,1000);
     })
 
 }
+{
+    let sp=document.querySelector(".cedda .san1");
+    let sq=document.querySelector(".cedda .san2");
+    let sb=document.querySelector(".cedda .san1 .xiao");
+    let sn=document.querySelector(".cedda .san2 .disa");
+    sp.onmouseover=function () {
+        sb.classList.add("fadeIn");
+        sb.style.display="block";
+    }
+    sp.onmouseout=function () {
+        sb.classList.remove("fadeIn");
+        sb.style.display="none";
+    }
+
+    sq.onmouseover=function () {
+        sn.classList.add("fadeOut");
+        sn.style.display="block";
+    }
+    sq.onmouseout=function () {
+        sn.classList.remove("fadeOut");
+        sn.style.display="none";
+    }
+}
+
+
+
+{
+    let banfn=document.querySelectorAll("#jds");
+    let bancd=document.querySelector(".aside-zs");
+    let ban=document.querySelector(".ban");
+    banfn.forEach(function (ele,index) {
+        ele.onmouseover=function () {
+            bancd.style.display="block"
+        }
+        ban.onmouseleave=function () {
+            bancd.style.display="none"
+        }
+    })
+}
+
+// 尖叫
+{
+    let suv= document.querySelectorAll(".sikuai1 input");
+    suv.forEach(function (ele) {
+    ele.onclick = function () {
+        this.placeholder ="";
+    }
+    ele.onfocus = function () {
+        if (this.value === "尖叫24小时,家电免费送")
+            this.value = "";
+    }
+    ele.onblur = function () {
+        if (this.value === "") {
+            this.value = "尖叫24小时,家电免费送";
+        }
+    }
+    })
+}
+
+
+
+{
+    let sv=document.querySelector(".dindan .wode:first-child");
+    let su=document.querySelector(".d_box");
+    sv.onmouseover=function () {
+        su.style.display="block";
+    }
+    sv.onmouseout=function () {
+        su.style.display="none";
+    }
+}
+

@@ -81,8 +81,8 @@
 .daohang .daochang{
 	width: 1190px;
 	height: 35px;
-	/* background: yellow; */
 	margin: 0 auto;
+	position: relative;
 }
 .daohang_left{
 	width: 228px;
@@ -144,7 +144,7 @@
 	display: block;
 	/* background: blue; */
 	float: left;
-	margin-right: 19px;
+	margin-right: 5px;
 	margin-top: 12px;
 }
 .denlu .denlu1{
@@ -161,34 +161,48 @@
 }
 
 .daohang_right .dindan{
-	width: 144px;
-	height: 12px;
+	width: 180px;
+	height: 36px;
 	/* background: yellow; */
 	float: left;
 	display: block;
-	margin-right: 19px;
-	margin-top: 12px;
+	margin-right: 10px;
 	transition: all 1s;
 }
 .dindan .wode{
-	width:61px; 
-	height: 12px;
-	/* background: red; */
+	width:83px;
+	height: 35px;
+	 background: #F5F5F5;
 	float: left;
-	margin-right: 22px;
+	margin-right: 5px;
+	line-height: 36px;
+	border-right: 1px solid #F5F5F5;
+	border-left: 1px solid #F5F5F5;
+
 }
+/*.dindan  .wode.active{*/
+	/*!*background: #fff;*!*/
+	/*!*border-right: 1px solid #c0c0ce;*!*/
+	/*!*border-left: 1px solid #c0c0ce;*!*/
+/*}*/
 .dindan .wode:last-child{
 	margin-right:0;
 }
 .wode .dindan1{
-	font-size:12px; 
+	font-size:12px;
 	color: #666666;
 	float: left;
+	padding: 2px 12px;
 }
 .wode:hover .dindan1{
-	color: #ff6600;
+	color: #f90;
 }
-.wode .dindan2{ 
+.wode:hover{
+	background: #fff;
+	border-right: 1px solid #c0c0ce;
+	border-left: 1px solid #c0c0ce;
+}
+.wode .dindan2{
 	width: 8px;
 	float: left;
 	transition: all 1s;
@@ -207,7 +221,7 @@
 	/* background: yellowgreen; */
 	display: block;
 	float: left;
-	margin-right: 14px;
+	margin-right: 5px;
 	margin-top: 12px;
 	font-size: 12px;
 }
@@ -220,14 +234,14 @@
 	/* background: blue; */
 	display: block;
 	float: left;
-	margin-right: 14px;
-	margin-top: 12px;	
+	margin-right: 10px;
+	margin-top: 12px;
 }
 .che .che1{
 	display: block;
 	font-size: 12px;
 	font-family: 'iconfont';
-	color: #ff6600; 
+	color: #ff6600;
 	text-align: center;
 }
 .che:hover .che1{
@@ -239,14 +253,14 @@
 	/* background: green; */
 	float: left;
 	display: block;
-	margin-right: 19px;
+	margin-right: 10px;
 	margin-top: 12px;
 }
 .yifu .caigou{
 	font-size: 12px;
 	color: #666666;
 	float: left;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .yifu .caigou:last-child{
 	margin-right:0px;
@@ -275,12 +289,44 @@
 	font-size: 12px;
 	color: #666666;
 	float: left;
-	 font-family: 'iconfont'; 
+	 font-family: 'iconfont';
 	 transition: all 1s;
 }
 .sousu:hover .sousu2{
 	transform: rotate(-180deg);
 }
+
+.d_box{
+	width: 83px;
+	height: 127px;
+	background: #fff;
+	position: absolute;
+	top: 35px;
+	left:663px;
+	z-index: 9999;
+	border:1px solid #c0c0ce;
+	border-top:none;
+	display: none;
+}
+.d_box .d_box1{
+	width: 100%;
+	height: 25%;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* 导航栏结束 */
 /* logo开始 */
@@ -310,11 +356,11 @@
 	height: 90px;
 }
 .logo_left .logo3{
-	width:160px; 
+	width:160px;
 	height:100px;
 	/* background:blue; */
 	display: block;
-	float: left; 
+	float: left;
 	margin-left: 20px;
 }
 .logo3 .nai{
@@ -339,10 +385,10 @@
 	float: left;
 	border:2px solid #ffaa00;
 	border-right: 0px;
-}	
+}
 .sikuai .shitu{
 	font-family: 'iconfont';
-	font-size: 12px;	
+	font-size: 12px;
 	color: #cccccc;
 	font-style: normal;
 	line-height: 36px;
@@ -404,7 +450,7 @@
 	width: 80px;
 	height: 80px;
 	background:yellow;
-	float: right; 
+	float: right;
 }
 .logo_right .ew{
 	width: 80px;
@@ -491,12 +537,12 @@
 }
 .you .fup{
 	width: 170px;
-	height: 38px; 
+	height: 38px;
 }
 
 /* 商品结束 */
 .juhui1 .jingli{
-	width:25px; 
+	width:25px;
 	height: 8px;
 	background: url('../index.png') no-repeat -37px 0px;
 	position: absolute;
@@ -530,7 +576,7 @@
 	height: 440px;
 	/* background: blue; */
 	position: absolute;
-	left: -275px;
+	left: calc(50% - 943px);
 	top: 0;
 }
 .ban-left img{
@@ -543,7 +589,7 @@
 	height: 440px;
 	/* background: blue; */
 	position: absolute;
-	right: -1101px;
+	right: calc(50% - 1759px);
 	top: 0;
 	z-index: 999;
 }
@@ -579,14 +625,14 @@
 	width: 9px;
 	height: 14px;
 	float: left;
-	margin-top:5px; 
-	margin-left: 10px; 
-} 
+	margin-top:5px;
+	margin-left: 10px;
+}
 .bu .bud{
 	font-family: 'iconfont';
 	font-size: 14px;
 	color: #fea900;
-} 
+}
  .qbu .sj{
 	width: 135px;
 	height: 100%;
@@ -596,7 +642,7 @@
 }
 .sj .suma{
 	font-size: 12px;
-	color: #ffffff;	
+	color: #ffffff;
 	float: left;
 	margin-left: 3px;
 	line-height: 32px;
@@ -620,14 +666,14 @@
 	width: 9px;
 	height: 14px;
 	float: left;
-	margin-top:5px; 
-	margin-left: 10px; 
-} 
+	margin-top:5px;
+	margin-left: 10px;
+}
 .bc .bcd{
 	font-family: 'iconfont';
 	font-size: 14px;
 	color: #fea900;
-} 
+}
  .qc .jiaj{
 	width: 135px;
 	height: 100%;
@@ -637,7 +683,7 @@
 }
 .jiaj .wanj{
 	font-size: 12px;
-	color: #ffffff;	
+	color: #ffffff;
 	float: left;
 	margin-left: 3px;
 	line-height: 31px;
@@ -721,7 +767,7 @@
     color: #ffffff;
     z-index: 1;
 }
-.ban_left:hover{	
+.ban_left:hover{
 	background: rgba(0,0,0,0.6);
 }
 .ban_right{
@@ -740,7 +786,7 @@
     color: #ffffff;
     z-index: 999;
 }
-.ban_right:hover{	
+.ban_right:hover{
 	background: rgba(0,0,0,0.6);
 }
 .banner .xie{
@@ -769,7 +815,7 @@
 	/* background: yellowgreen; */
 	margin-left: 19px;
 	margin-top: 23px;
-	
+
 }
 .qia1 .fensi{
 	font-size: 14px;
@@ -782,7 +828,7 @@
 	/* background: blue; */
 	margin-left: 19px;
 	margin-top: 5px;
-	
+
 }
 .qia2 .fensi1{
 	font-size: 12px;
@@ -919,7 +965,7 @@
 	float: left;
 }
 .hi3 .zuan:last-child .zuan1{
-	font-family: 'iconfont'; 
+	font-family: 'iconfont';
 	color: #fb6e52;
 }
 .zuan .zuan2{
@@ -980,6 +1026,139 @@
 .xr3 .huafei:nth-child(6){
 	border-right: 0;
 }
+
+
+
+
+
+
+.aside-zs{
+    width: 985px;
+    height: 440px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 270px;
+    z-index: 9999!important;
+    display: flex;
+    justify-content: space-between;
+    padding:5px 20px;
+    box-sizing: border-box;
+    border:1px solid #000;
+    border-left: none;
+    display: none;
+}
+.zs-bx-qi{
+    width: 700px;
+    height: 26px;
+    /*background: red;*/
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.zs-bx-qi .ssa{
+    height: 24px;
+    font-size: 16px;
+    color: #fff;
+    background: #f90;
+    text-align: center;
+    line-height: 24px;
+    padding: 1px 5px;
+}
+
+
+
+
+
+
+.asidezibox:hover .aside-zs{
+    width: 800px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+/*.asidezibox:hover .zs-right{
+	display: block;
+}*/
+.zs-left{
+    width: 540px;
+    height: 345px;
+    margin-top: 40px;
+    /*background: yellow;*/
+
+}
+
+.zs-box{
+    width: 100%;
+    /*background: red;*/
+    display: flex;
+    padding:2px 10px;
+    box-sizing: border-box;
+    margin-bottom:10px;
+}
+.zs-box-left{
+    font-size: 14px;
+    line-height: 30px;
+    color: #000;
+}
+.zs-box-right{
+    width: 430px;
+    /*background: skyblue;*/
+    margin-left: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.zs-box-right span{
+    display: block;
+    font-size: 12px;
+    color: #888;
+    line-height: 26px;
+    margin-right: 10px;
+}
+.zs-box-right span:nth-child(2n+1){
+    color: #ff7600;
+}
+.zs-box-right span:hover{
+    color: #ff7600;
+}
+.zs-right{
+    width: 200px;
+    height: 345px;
+
+    /*background: pink;*/
+    display: flex;
+    flex-wrap: wrap;
+    /*z-index: 1000;*/
+
+}
+.zs-right img{
+    display: block;
+    width: 100px;
+    height:49px;
+    /*background: gold;*/
+    margin:0;
+}
+.zs-right span{
+    display: block;
+    width: 200px;
+    height: 100px;
+    /*background: red;*/
+}
+.zs-right span img{
+    display: block;
+    width: 200px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
 .huafei .hua{
 	width: 56px;
 	height: 53px;
@@ -1012,6 +1191,7 @@
 	/* background: #f7003e; */
 	margin: 0 auto;
 	position: relative;
+    z-index: 0;
 }
 .quantu .quantu1{
 	width: 1190px;
@@ -1036,7 +1216,7 @@
 	height: 190px;
 	background: gray;
 	display: block;
-	float: left;	
+	float: left;
 	margin-left: 10px;
 }
 .chat .chat1:first-child{
@@ -1049,7 +1229,7 @@
 }
 .fiv .santu{
 	width: 230px;
-	height: 190px;	
+	height: 190px;
 }
 /* 家电购结束 */
 
@@ -1131,7 +1311,7 @@
 	/* border-radius: 30%; */
 }
 .tuo .tuo1{
-	font-size:12px; 
+	font-size:12px;
 	color: #ffffff;
 	line-height: 24px;
 	margin-left: 15px;
@@ -1205,11 +1385,11 @@
 	line-height: 16px;
 }
 .si .xs{
-	font-family: 'iconfont'; 
+	font-family: 'iconfont';
 	font-size: 10px;
 	color: #ff6600;
 	float: left;
-	
+
 }
 .si .xs1{
 	font-size: 16px;
@@ -1217,7 +1397,7 @@
 	float: left;
 }
 .si .xs2{
-	font-family: 'iconfont'; 
+	font-family: 'iconfont';
 	font-size: 10px;
 	color: #999999;
 	text-decoration: line-through;
@@ -1325,7 +1505,7 @@
 	margin-right: 10px;
 }
 .vc_right .vc_right_ho{
-	font-size:12px; 
+	font-size:12px;
 	color: #ffffff;
 	float: left;
 	margin-left: 6px;
@@ -1388,7 +1568,7 @@
 	/* background: gray; */
 	/* margin-top: 19px; */
 	float: left;
-	
+
 }
 .weicao .chao{
 	font-size: 12px;
@@ -1406,7 +1586,7 @@
 	color: #333333;
 }
 .yejin .yejin3{
-	width:90px; 
+	width:90px;
 	height: 90px;
 	/* background: yellowgreen; */
 	float: left;
@@ -1414,11 +1594,11 @@
 	margin-left: 10px;
 }
 .yejin3 .jiu{
-	width:90px; 
+	width:90px;
 	height: 90px;
 }
 .jiu .jiu1{
-	width:90px; 
+	width:90px;
 	height: 90px;
 	transition: all 1s;
 }
@@ -1442,9 +1622,9 @@
 	width: 53px;
 	height: 53px;
 	background: red;
-	position: absolute; 
+	position: absolute;
 	top: 0px;
-	left: 
+	left:
 } */
 .tese .wc{
 	display: block;
@@ -1547,7 +1727,7 @@
 .saxia{
 	width:184px;
 	height:361px;
-	background: yellow; 
+	background: yellow;
 	overflow: hidden;
 	border-right: 1px solid #e7e7e7;
 	float: left;
@@ -1573,7 +1753,7 @@
 }
 .saxia1 .dapi{
 	width: 184px;
-	height:180px; 
+	height:180px;
 	background: #ffffff;
 	display: block;
 	border-bottom: 1px solid #e7e7e7;
@@ -1583,7 +1763,7 @@
 	border-bottom:0px;
 }
 .dapi .dapi1{
-	width:86px; 
+	width:86px;
 	height: 20px;
 	background: #e66a07;
 	border-radius: 10px;
@@ -1675,7 +1855,7 @@
 .mi .mi3{
 	line-height: 12px;
 	width: 40px;
-	font-size:12px; 
+	font-size:12px;
 	color: #b62323;
 	margin-top: 94px;
 	margin-left: 12px;
@@ -1686,7 +1866,7 @@
 /* 特卖 */
 
 aside{
-	width:1190px; 
+	width:1190px;
 	height: 427px;
 	background:#f2f2f2 ;
 	margin: 0 auto;
@@ -1760,10 +1940,10 @@ aside{
 }
 .teshu{
 	height: 241px;
-	border-right: 1px solid #e7e7e7; 
+	border-right: 1px solid #e7e7e7;
 }
 .lghz-list-bot .st-list:nth-child(4){
-	border-right: 1px solid #e7e7e7; 
+	border-right: 1px solid #e7e7e7;
 }
 .teshu-wenzi{
 	font-size: 12px;
@@ -1898,7 +2078,7 @@ aside{
 	margin-bottom: 5px;
 }
 .mei .x{
-	width:100%; 
+	width:100%;
 	height: 45px;
 	background: #3f3435;
 	line-height: 45px;
@@ -1909,12 +2089,12 @@ aside{
 	margin-left: 15px;
 }
 .mei .x1{
-	width:100%; 
+	width:100%;
 	height:227px;
 	background:gray ;
 }
 .x1 img{
-	width:100%; 
+	width:100%;
 	height:227px;
 }
 .mei .xi{
@@ -1930,7 +2110,7 @@ aside{
 	line-height: 17px;
 }
 .xi .zon{
-	font-family: 'iconfont'; 
+	font-family: 'iconfont';
 	font-size: 12px;
 	color: #d69003;
 	display: block;
@@ -1954,7 +2134,7 @@ aside{
 	top: 125px;
 }
 .bofa .af{
-	font-family: 'iconfont'; 
+	font-family: 'iconfont';
 	font-size: 16px;
 	color: #fffffe;
 }
@@ -2007,7 +2187,7 @@ aside{
 	top: 18px;
 }
 .nan1 .nan2{
-	font-family: 'iconfont'; 
+	font-family: 'iconfont';
 	font-size: 10px;
 	color: #fffffe;
 }
@@ -2018,7 +2198,7 @@ aside{
 	border: 1px solid #ff9900;
 }
 .mei1 .nan3{
-	font-size:12px; 
+	font-size:12px;
 	color: #f7f7f7;
 	position: absolute;
 	left: 8px;
@@ -2105,7 +2285,7 @@ aside{
 	height: 407px;
 	background: #efefef;
 	margin: 0 auto;
-	
+
 }
 .xiaji .pidao{
 	width: 590px;
@@ -2249,13 +2429,13 @@ aside{
 	color: #3299cc;
 }
 .juihui .yuan{
-	width:120px; 
+	width:120px;
 	height: 120px;
 	background: yellow;
 	margin-left: 41px;
 }
 .yuan .yuan1{
-	width:120px; 
+	width:120px;
 	height: 120px;
 	transition: all 1s;
 }
@@ -2445,7 +2625,7 @@ aside{
 	height: 382px;
 	background: white;
 	float: left;
-	
+
 }
 .boxd2{
 	width: 195px;
@@ -2463,7 +2643,7 @@ aside{
      position: absolute;
      bottom: 0;
      right: 13px;
-     
+
 }
 .boxd2 .a13{
 	font-size: 12px;
@@ -2574,7 +2754,7 @@ aside{
 }
 .jial{
 	font-size: 12px;
-	color: #333333;	
+	color: #333333;
 	display: block;
 }
 .jial:hover{
@@ -2694,7 +2874,7 @@ aside{
 .san{
 	width: 1190px;
 	height: 320px;
-	background: red;
+	/*background: red;*/
 	margin: 0 auto;
 }
 .san .cai{
@@ -2705,7 +2885,7 @@ aside{
 	float: left;
 	border: 1px solid #eeeeee;
 	border-top: 0px;
-	
+
 }
 .cai .sixi{
 	width: 200px;
@@ -2770,8 +2950,8 @@ aside{
 /* 尾 */
 .end{
 	width: 1190px;
-	height:63px; 
-	background:#F5F5F5; 
+	height:63px;
+	background:#F5F5F5;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -2863,7 +3043,7 @@ aside{
     line-height: 40px;
     font-weight: bold;
     color: #545454;
-     height: 35px; 
+     height: 35px;
     font-size: 14px;
     overflow: hidden;
 }
@@ -2891,7 +3071,7 @@ aside{
     line-height: 40px;
     font-weight: bold;
     color: #545454;
-     height: 35px; 
+     height: 35px;
     font-size: 14px;
     overflow: hidden;
 }
@@ -2917,7 +3097,7 @@ aside{
 }
 
 .ceda{
-	width:70px; 
+	width:70px;
 	height: 319px;
 	background: #F8F8F8;
 	position: fixed;
@@ -2929,7 +3109,7 @@ aside{
 	left: calc(50% - 666px);
 }
 .ceda .li1{
-	width:45px; 
+	width:45px;
 	height: 37px;
 	background: url('../index.png') no-repeat -302px -80px;
 	position: absolute;
@@ -2954,7 +3134,7 @@ aside{
 	border-bottom: 1px solid #E8E8E8;
 }
 .ceda ul li .celan{
-	font-size:12px; 
+	font-size:12px;
 	color: #333333;
 	text-align: center;
 	display: block;
@@ -2976,7 +3156,7 @@ aside{
 	align-items: center;
 }
 .din i{
-	font-family: 'iconfont';  
+	font-family: 'iconfont';
 	font-size: 6px;
 	color: #333333;
 	display: block;
@@ -3009,11 +3189,11 @@ footer .one{
 	/* background: greenyellow; */
 	margin: 0 auto;
 	 display: flex;
-	justify-content: space-around; 
+	justify-content: space-around;
 }
 footer .one:first-child{
 	margin-top: 23px;
-	
+
 }
 footer .one:nth-child(2){
 	/* margin-top: 12px; */
@@ -3076,3 +3256,138 @@ footer .one:last-child img{
 	height: auto;
 	background: #f5f5f5;
 }
+
+.cedda{
+	width: 35px;
+	height: 620px;
+	position: fixed;
+	right: 0;
+	bottom: 0px;
+	background: #383838;
+	z-index: 9999;
+}
+.cedda .san{
+	padding: 3px 0 10px;
+	border: 1px solid #4D4D4D;
+	border-width: 1px 0;
+	text-align: center;
+	cursor: pointer;
+	width: 29px;
+	height: 117px;
+	margin-top: 100px;
+}
+.cedda .san:hover{
+	background: #f90;
+}
+.cedda .san .wug{
+	font-size: 16px;
+	color: #fff;
+	margin-top: 10px;
+}
+.cedda .san:hover .wug{
+	color: #ffffff;
+}
+.cedda .san1,.cedda .san2{
+	width: 35px;
+	height: 30px;
+	/*background: blue;*/
+	margin-top: 5px;
+	position: relative;
+}
+.cedda .san1:hover{
+	background: #f90;
+}
+.cedda .san1 .sp{
+	font-size: 20px;
+	color: #F90;
+	font-family: 'iconfont';
+	text-align: center;
+	line-height: 30px;
+}
+.cedda .san1:hover .sp{
+	color: #ffffff;
+}
+.cedda .san1 .xiao{
+	width: 47px;
+	height: 30px;
+	background: #f90;
+	position: absolute;
+	top: 0;
+	left: -47px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+	display: none;
+}
+.cedda .san2{
+	margin-top: 50px;
+}
+.cedda .san2:hover{
+	background: #f90;
+}
+.cedda .san2 .din{
+	font-size: 16px;
+	color: #F90;
+	line-height: 30px;
+	text-align: center;
+	position: relative;
+}
+.cedda .san2:hover .din{
+	color: #FFFFFF;
+}
+.cedda .san2 .disa{
+	width: 73px;
+	height: 30px;
+	background: #f90;
+	position: absolute;
+	top: 0;
+	left: -73px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+	display: none;
+}
+@keyframes fadeIn {
+	0%{
+		margin-left: 47px;
+		opacity: 0;
+	}
+	100%{
+		margin-left: 0px;
+		opacity: 1;
+	}
+}
+.fadeIn{
+	animation: fadeIn 1s ease;
+}
+@keyframes fadeOut {
+	0%{
+		margin-left: 47px;
+		opacity: 0;
+	}
+	100%{
+		margin-left: 0px;
+		opacity: 1;
+	}
+}
+.fadeOut{
+	animation: fadeIn 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
