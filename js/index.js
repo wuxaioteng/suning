@@ -128,43 +128,25 @@ let st=setInterval(lunbo,1000);
     })
 
 }
-{
-    let sp=document.querySelector(".cedda .san1");
-    let sq=document.querySelector(".cedda .san2");
-    let sb=document.querySelector(".cedda .san1 .xiao");
-    let sn=document.querySelector(".cedda .san2 .disa");
-    sp.onmouseover=function () {
-        sb.classList.add("fadeIn");
-        sb.style.display="block";
-    }
-    sp.onmouseout=function () {
-        sb.classList.remove("fadeIn");
-        sb.style.display="none";
-    }
-
-    sq.onmouseover=function () {
-        sn.classList.add("fadeOut");
-        sn.style.display="block";
-    }
-    sq.onmouseout=function () {
-        sn.classList.remove("fadeOut");
-        sn.style.display="none";
-    }
-}
-
 
 
 {
     let banfn=document.querySelectorAll("#jds");
-    let bancd=document.querySelector(".aside-zs");
+    let bancd=document.querySelectorAll(".aside-zs");
     let ban=document.querySelector(".ban");
     banfn.forEach(function (ele,index) {
-        ele.onmouseover=function () {
-            bancd.style.display="block"
+         ele.onmouseover=function () {
+            for(let i=0;i<bancd.length;i++){
+                bancd[i].style.display="none"
+            }
+                bancd[index].style.display="block"
         }
-        ban.onmouseleave=function () {
-            bancd.style.display="none"
-        }
+            ban.onmouseleave=function () {
+                for(let i=0;i<bancd.length;i++){
+                    bancd[i].style.display="none"
+                }
+            }
+       
     })
 }
 

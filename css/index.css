@@ -118,12 +118,12 @@
 	float: left;
 }
 @font-face {
-  font-family: 'iconfont';  /* project id 494769 */
-  src: url('https://at.alicdn.com/t/font_494769_411swr1zux1dcxr.eot');
-  src: url('https://at.alicdn.com/t/font_494769_411swr1zux1dcxr.eot?#iefix') format('embedded-opentype'),
-  url('https://at.alicdn.com/t/font_494769_411swr1zux1dcxr.woff') format('woff'),
-  url('https://at.alicdn.com/t/font_494769_411swr1zux1dcxr.ttf') format('truetype'),
-  url('https://at.alicdn.com/t/font_494769_411swr1zux1dcxr.svg#iconfont') format('svg');
+	font-family: 'iconfont';  /* project id 494769 */
+	src: url('https://at.alicdn.com/t/font_494769_9rajuseoe2ricnmi.eot');
+	src: url('https://at.alicdn.com/t/font_494769_9rajuseoe2ricnmi.eot?#iefix') format('embedded-opentype'),
+	url('https://at.alicdn.com/t/font_494769_9rajuseoe2ricnmi.woff') format('woff'),
+	url('https://at.alicdn.com/t/font_494769_9rajuseoe2ricnmi.ttf') format('truetype'),
+	url('https://at.alicdn.com/t/font_494769_9rajuseoe2ricnmi.svg#iconfont') format('svg');
 }
 .daohang1 .waz1{
 	font-family: 'iconfont';
@@ -1038,7 +1038,7 @@
     background: #fff;
     position: absolute;
     top: 0;
-    left: 270px;
+    left: 190px;
     z-index: 9999!important;
     display: flex;
     justify-content: space-between;
@@ -3259,12 +3259,13 @@ footer .one:last-child img{
 
 .cedda{
 	width: 35px;
-	height: 620px;
+	height: 100%;
 	position: fixed;
 	right: 0;
 	bottom: 0px;
 	background: #383838;
 	z-index: 9999;
+	padding-bottom: 200px;
 }
 .cedda .san{
 	padding: 3px 0 10px;
@@ -3274,7 +3275,7 @@ footer .one:last-child img{
 	cursor: pointer;
 	width: 29px;
 	height: 117px;
-	margin-top: 100px;
+	margin-top: 200px;
 }
 .cedda .san:hover{
 	background: #f90;
@@ -3290,7 +3291,6 @@ footer .one:last-child img{
 .cedda .san1,.cedda .san2{
 	width: 35px;
 	height: 30px;
-	/*background: blue;*/
 	margin-top: 5px;
 	position: relative;
 }
@@ -3307,22 +3307,26 @@ footer .one:last-child img{
 .cedda .san1:hover .sp{
 	color: #ffffff;
 }
-.cedda .san1 .xiao{
+
+.cedda .sp .xiao{
 	width: 47px;
 	height: 30px;
 	background: #f90;
 	position: absolute;
 	top: 0;
-	left: -47px;
+	left: 47px;
 	text-align: center;
 	line-height: 30px;
 	font-size: 14px;
 	color: #fff;
+	transition: all 5s;
 	display: none;
 }
-.cedda .san2{
-	margin-top: 50px;
+.cedda .san1 .sp:hover  .xiao{
+	left: -47px;
+	display: block;
 }
+
 .cedda .san2:hover{
 	background: #f90;
 }
@@ -3332,48 +3336,25 @@ footer .one:last-child img{
 	line-height: 30px;
 	text-align: center;
 	position: relative;
+	margin-top: 50px;
 }
 .cedda .san2:hover .din{
 	color: #FFFFFF;
 }
-.cedda .san2 .disa{
+.cedda .din .disa{
 	width: 73px;
 	height: 30px;
 	background: #f90;
 	position: absolute;
 	top: 0;
-	left: -73px;
+	left: 73px;
 	text-align: center;
 	line-height: 30px;
 	font-size: 14px;
 	color: #fff;
-	display: none;
 }
-@keyframes fadeIn {
-	0%{
-		margin-left: 47px;
-		opacity: 0;
-	}
-	100%{
-		margin-left: 0px;
-		opacity: 1;
-	}
-}
-.fadeIn{
-	animation: fadeIn 1s ease;
-}
-@keyframes fadeOut {
-	0%{
-		margin-left: 47px;
-		opacity: 0;
-	}
-	100%{
-		margin-left: 0px;
-		opacity: 1;
-	}
-}
-.fadeOut{
-	animation: fadeIn 1s ease;
+.cedda .san2 .din:hover .disa{
+	left: -73px;
 }
 
 
